@@ -57,30 +57,33 @@ Developed by:VIGNESH.K
 RegisterNumber:25018207
 HALF ADDER
 ```
-module addsub(a,b,s,c);
-input a,b;
-output s,c;
-xor g1(s,a,b);
-and g2(c,a,b);
+ module exp4a(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=a^b^c
+assign carry=(a&b)|(b&c)|(c&a);
 endmodule
 ```
 HALF SUBTRACTOR
 ```
-module sub(a,b,diff,borr);
-input a,b;
+ module exp4b(a,b,cin,diff,borr);
+input a,b,cin;
 output diff,borr;
-assign diff=a^b;
-assign borr=(~a)&b;
+assign diff=(~a)&c|b&c|(~a)&b;
+assign borr=a^b^c;
 endmodule
 ```
 **RTL Schematic HALF ADDER**
-<img width="1915" height="1079" alt="Screenshot 2025-11-19 100621" src="https://github.com/user-attachments/assets/ed053324-1315-4b97-9de8-c7172c4edf62" />
+ <img width="1045" height="514" alt="Screenshot 2025-12-19 212604" src="https://github.com/user-attachments/assets/fda56528-9871-41c4-b326-de6da1f0b377" />
+
 HALF SUBTRACTOR
-<img width="1910" height="1053" alt="Screenshot 2025-11-19 102617" src="https://github.com/user-attachments/assets/477e8d4c-9dd6-4c28-90e2-0b345fd9a597" />
+ <img width="1033" height="505" alt="Screenshot 2025-12-19 212618" src="https://github.com/user-attachments/assets/b714ef61-22a9-46ab-8fad-143e1a2adb46" />
+
 **Output/TIMING Waveform HALF ADDER**
-<img width="1917" height="1077" alt="Screenshot 2025-11-19 100912" src="https://github.com/user-attachments/assets/415acabe-bb8f-4d59-bd5e-f0cdbcfe6476" />
+ <img width="1039" height="198" alt="Screenshot 2025-12-19 212630" src="https://github.com/user-attachments/assets/945cd073-141b-4a84-9dc5-f2a7bdc4a856" />
+
 HALF SUBTRACTOR
-<img width="1919" height="1079" alt="Screenshot 2025-11-19 103217" src="https://github.com/user-attachments/assets/bb6415dc-13ec-4ea2-8cf0-e40395685d4f" />
+ <img width="1046" height="191" alt="Screenshot 2025-12-19 212637" src="https://github.com/user-attachments/assets/842dbe31-b885-4ce1-9f7f-626052786981" />
 
 **Result:**
 Hence to design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming has been verified successfully.
