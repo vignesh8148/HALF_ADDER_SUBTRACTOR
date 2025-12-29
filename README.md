@@ -74,16 +74,16 @@ assign borr=a^b^c;
 endmodule
 ```
 **RTL Schematic HALF ADDER**
- <img width="1045" height="514" alt="Screenshot 2025-12-19 212604" src="https://github.com/user-attachments/assets/fda56528-9871-41c4-b326-de6da1f0b377" />
-
+  <img width="1879" height="984" alt="image" src="https://github.com/user-attachments/assets/4804e2a2-b922-4e79-8337-4b7f65032e90" />
+  
 HALF SUBTRACTOR
- <img width="1033" height="505" alt="Screenshot 2025-12-19 212618" src="https://github.com/user-attachments/assets/b714ef61-22a9-46ab-8fad-143e1a2adb46" />
+ <img width="1649" height="806" alt="image" src="https://github.com/user-attachments/assets/dcc78bfe-36b8-46ed-910f-11f3ddbf2020" />
 
 **Output/TIMING Waveform HALF ADDER**
- <img width="1039" height="198" alt="Screenshot 2025-12-19 212630" src="https://github.com/user-attachments/assets/945cd073-141b-4a84-9dc5-f2a7bdc4a856" />
+  <img width="1909" height="317" alt="image" src="https://github.com/user-attachments/assets/dc47851d-2289-4a29-9dab-6ab481d11700" />
 
 HALF SUBTRACTOR
- <img width="1046" height="191" alt="Screenshot 2025-12-19 212637" src="https://github.com/user-attachments/assets/842dbe31-b885-4ce1-9f7f-626052786981" />
+  <img width="1837" height="251" alt="image" src="https://github.com/user-attachments/assets/944b8319-e6d7-4e23-9736-8086f18e8e67" />
 
 **Result:**
 Hence to design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming has been verified successfully.
